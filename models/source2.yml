@@ -1,0 +1,10 @@
+version: 2
+sources:
+   - name: datafeed_shared_schema
+     database: "{{('DEV_11')}}"
+     schema: sales_11
+
+     tables:
+       - name: raw_customers_data
+       - name: raw_orders_data
+       - name: raw_payments_data
