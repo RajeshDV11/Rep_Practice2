@@ -8,3 +8,20 @@ sources:
        - name: raw_customers_data
        - name: raw_orders_data
        - name: raw_payments_data
+       - name: SRC_CUSTOMERS_SS
+       - name: emp1
+       - name: emp1test1
+         columns:
+           - name: eno
+             tests: 
+               - unique
+               - not_null
+           - name: status 
+             tests:
+               - accepted_values:
+                  values: ['confirm','shortlist','reject','onhold']   
+       - name: student  
+       - name: emp_sal
+       - name: student_data      
+               
+               
